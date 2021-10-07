@@ -1,0 +1,13 @@
+#navEmail {
+	display: flex;
+	flex-direction: row;
+}
+#divEmail {
+	margin: 0vh 1vw;
+}
+#emailMessage {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

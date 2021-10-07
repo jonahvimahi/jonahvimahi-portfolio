@@ -1,16 +1,16 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from "react";
 import emailIcon from "../../../Content/icons/email-icon.png";
-
+import "./CopyEmail.css";
 
 function CopyEmail() {
-    const [copySuccessMessage, setCopySuccessMessage] = useState("");
+	const [copySuccessMessage, setCopySuccessMessage] = useState("");
 	const [instructions, setInstructions] = useState("");
 	const email = "webdevjonah@gmail.com";
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setCopySuccessMessage("");
-		}, 5000);
+		}, 2000);
 		return () => clearTimeout(timer);
 	}, [copySuccessMessage]);
 
@@ -29,25 +29,27 @@ function CopyEmail() {
 		setInstructions("");
 	}
 
-    return(
-        <>
-        <p>
-        {setCopySuccessMessage} {instructions}
-    </p>
+	return ( 
+		<div id="navEmail">
+			<div id="divEmail">
+				<p
+					onClick={copyEmail}
+					onMouseOver={showInstruction}
+					onMouseOut={hideInstruction}
+					type="email"
+					id="logoLinkEmail"
+					className="logoLink"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<img src={emailIcon} alt="Email Logo" className="logo" />
+				</p>
+			</div>
 
-    <p
-        onClick={copyEmail}
-        onMouseOver={showInstruction}
-        onMouseOut={hideInstruction}
-        type="email"
-        id="logoLinkEmail"
-        className="logoLink"
-        target="_blank"
-        rel="noreferrer"
-    >
-        <img src={emailIcon} alt="Email Logo" className="logo" />
-    </p>
-    </>
-    )
+			<p id="emailMessage">
+				{copySuccessMessage} {instructions}
+			</p>
+		</div>
+	);
 }
-export default CopyEmail
+export default CopyEmail;

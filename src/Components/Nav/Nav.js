@@ -6,7 +6,8 @@ import linkedInIcon from "../../Content/icons/linkedin-icon.png";
 
 const Nav = () => {
 	return (
-		<div className="mainNav">
+		<div id="mainNav">
+			<div id="divGitHub">
 			<a
 				href="https://github.com/jonahvimahi"
 				id="logoLinkGitHub"
@@ -16,6 +17,8 @@ const Nav = () => {
 			>
 				<img src={gitHubIcon} alt="GitHub Logo" className="logo" />
 			</a>
+			</div>
+			<div id="divLinkedIn">
 			<a
 				href="https://www.linkedin.com/in/jonah-vimahi/"
 				id="logoLinkLinkedIn"
@@ -25,6 +28,7 @@ const Nav = () => {
 			>
 				<img src={linkedInIcon} alt="LinkedIn Logo" className="logo" />
 			</a>
+			</div>
 			<CopyEmail />
 			
 
