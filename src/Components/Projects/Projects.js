@@ -74,7 +74,7 @@ function Projects() {
 						</a>
 
 						<a
-							href="https://github.com/jonahvimahi/olso-music-new"
+							href="https://github.com/jonahvimahi/weatherApp"
 							id="weatherAppGitHubLink"
 							target="_blank"
 							rel="noreferrer"
