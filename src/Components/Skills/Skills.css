@@ -39,3 +39,9 @@
 	height: 12vh;
 	width: auto;
 }
+
+@media screen and (max-width: 767px){
+	.skillsList{
+		margin-bottom: 1vh;
+	}
+}

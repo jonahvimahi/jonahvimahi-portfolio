@@ -1,6 +1,7 @@
 import React from "react";
 import "./Nav.css";
 import CopyEmail from "./CopyEmail/CopyEmail";
+import Email from "./CopyEmail/Email";
 import gitHubIcon from "../../Content/icons/github-icon.png";
 import linkedInIcon from "../../Content/icons/linkedin-icon.png";
 
@@ -38,7 +39,7 @@ const Nav = () => {
 			</a>
 			</div>
 			<div id="divEmail">
-			<CopyEmail />
+			{window.innerwidth >= 768 ? <CopyEmail /> : <Email />}
 			</div>
 			</div>
 			</div>

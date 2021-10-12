@@ -28,3 +28,9 @@ text-align: center;
 padding-bottom: 5vh;
 margin-top: 8vh;
 }
+
+@media screen and (max-width: 767px){
+    .sectionTitle{
+        margin-top: 1vh
+    }
+}

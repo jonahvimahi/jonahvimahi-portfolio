@@ -72,3 +72,22 @@ font-family: Montserrat;
 	margin-top: .8rem;
 	position: absolute;
 }
+
+@media screen and (max-width: 767px) {
+	#mainNav{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		font-size: 22px;
+	}
+	#section2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#section3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

@@ -8,3 +8,9 @@
 	width: inherit;
 	font-family: Montserrat;
 }
+
+@media screen and (max-width: 767px){
+	#pageContent{
+		width: auto;
+	}
+}
