@@ -1,0 +1,30 @@
+.aboutPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Montserrat;
+}
+#aboutBody{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-color: #faccca;
+    border: 2px solid white;
+	border-radius: 15px;
+    height: 40;
+    margin-bottom: 20vh;
+    padding: 4vh 1vw;
+    
+}
+.aboutPara{
+    margin: 4vh 0vw;
+}
+.sectionTitle{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 40px;
+text-align: center;
+padding-bottom: 5vh;
+margin-top: 8vh;
+}

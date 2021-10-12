@@ -1,0 +1,78 @@
+@font-face {
+	font-family: Montserrat;
+	src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+}
+
+.projectsPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Montserrat;
+	margin-top: 8vh;
+}
+#projects {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: inherit;
+	height: auto;
+	padding: 0vh 3vw;
+	margin-bottom: 10rem;
+}
+.sectionTitle {
+	display: flex;
+	font-family: Montserrat;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	text-align: center;
+	padding-bottom: 5vh;
+}
+.projectTitle {
+	font-size: 30px;
+	text-decoration: underline;
+	padding: 3vh 0vw;
+	text-align: center;
+}
+.projectLinks {
+	display: flex;
+	flex-direction: row;
+	width: inherit;
+}
+.projectDescription {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.projectDescription h1 {
+	font-size: 20px;
+	text-decoration: underline;
+	text-align: center;
+	padding-bottom: 1vh;
+}
+.projectDescription p {
+	/* text-indent: 25px; */
+	text-align: center;
+}
+.projectBox {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: #faccca;
+	width: 25vw;
+	height: auto;
+	border: 2px solid white;
+	border-radius: 15px;
+	margin: 0vh 2vw;
+	padding-bottom: 2vh;
+}
+.projectScreenShot {
+	padding: 0 0;
+	width: 20vw;
+	height: auto;
+}
+.gitHubIcon {
+	height: 2rem;
+	width: 2rem;
+}

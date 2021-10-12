@@ -1,5 +1,10 @@
-#pageContent {
-	background-image: url("https://images.unsplash.com/photo-1521489871110-81dc5a61dbda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1228&q=80");
-	height: 100vh;
-	width: 100%;
+@font-face {
+	font-family: Montserrat;
+	src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+}
+ #pageContent {
+	background-attachment: fixed;
+	background-image: url("./Content/images/mountain-background.jpeg");
+	width: inherit;
+	font-family: Montserrat;
 }

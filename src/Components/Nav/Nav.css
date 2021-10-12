@@ -1,16 +1,74 @@
-#mainNav {
-	display: flex;
-	flex-direction: column;
-	background-color: rgba(223, 0, 0, 0.233);
+@font-face {
+	font-family: Montserrat;
+	src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 }
 
-.logo {
-	height: 5vh;
-	width: 2.5vw;
+#mainNav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: rgba(223, 0, 0, 0.233);
+	width: inherit;
+	height: 10vh;
+	padding: 1vw 1vh;
+}
+#section1{
+	width: 33%;
+	height: auto
+}
+#section2{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#section3{
+	width: 33%;
+	display: flex;
+	justify-content: flex-end;
+}
+#nameTitle{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 36px;
+	background-color: #b5b6b8ad;
+	padding: 1vh 1vw;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+#name{
+font-family: Montserrat;
+}
+#icons{
+	display: flex;
+	flex-direction: row;
+	padding-right:5vw;
+}
+.navLogo {
+	height: 2.5rem;
+	width: 2.5rem;
 }
 #divGitHub{
-    margin: 1vh 1vw
+    margin: 2vh 1vw
 }
 #divLinkedIn{
-    margin: 1vh 1vw
+    margin: 2vh 1vw
+}
+#divEmail {
+	margin: 1vh .5vw
+}
+#navEmail {
+	display: flex;
+	flex-direction: column;
+}
+#emailMessage {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	font-family: Montserrat;
+	margin-left: 3.5rem;
+	margin-top: .8rem;
+	position: absolute;
 }

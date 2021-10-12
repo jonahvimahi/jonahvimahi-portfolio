@@ -7,6 +7,14 @@ import linkedInIcon from "../../Content/icons/linkedin-icon.png";
 const Nav = () => {
 	return (
 		<div id="mainNav">
+			<div className="navSection"id="section1"></div>
+			<div className="navSection"id="section2">
+			<div id="nameTitle">
+				<h1 id="name">Jonah Vimahi</h1>
+			</div>
+			</div>
+			<div className="navSection"id="section3">
+			<div id="icons">
 			<div id="divGitHub">
 			<a
 				href="https://github.com/jonahvimahi"
@@ -15,7 +23,7 @@ const Nav = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<img src={gitHubIcon} alt="GitHub Logo" className="logo" />
+				<img src={gitHubIcon} alt="GitHub Logo" className="navLogo" />
 			</a>
 			</div>
 			<div id="divLinkedIn">
@@ -26,11 +34,14 @@ const Nav = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<img src={linkedInIcon} alt="LinkedIn Logo" className="logo" />
+				<img src={linkedInIcon} alt="LinkedIn Logo" className="navLogo" />
 			</a>
 			</div>
+			<div id="divEmail">
 			<CopyEmail />
-			
+			</div>
+			</div>
+			</div>
 
 			</div>
 	);

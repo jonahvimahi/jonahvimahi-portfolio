@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import emailIcon from "../../../Content/icons/email-icon.png";
-import "./CopyEmail.css";
 
 function CopyEmail() {
 	const [copySuccessMessage, setCopySuccessMessage] = useState("");
@@ -29,23 +28,20 @@ function CopyEmail() {
 		setInstructions("");
 	}
 
-	return ( 
+	return (
 		<div id="navEmail">
-			<div id="divEmail">
-				<p
-					onClick={copyEmail}
-					onMouseOver={showInstruction}
-					onMouseOut={hideInstruction}
-					type="email"
-					id="logoLinkEmail"
-					className="logoLink"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<img src={emailIcon} alt="Email Logo" className="logo" />
-				</p>
-			</div>
-
+			<p
+				onClick={copyEmail}
+				onMouseOver={showInstruction}
+				onMouseOut={hideInstruction}
+				type="email"
+				id="logoLinkEmail"
+				className="logoLink"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<img src={emailIcon} alt="Email Logo" id="divEmail" className="navLogo" />
+			</p>
 			<p id="emailMessage">
 				{copySuccessMessage} {instructions}
 			</p>
