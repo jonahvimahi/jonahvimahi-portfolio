@@ -38,6 +38,7 @@ function Contact() {
 						<input
 							type="text"
 							id="name"
+                            name="name"
 							onChange={(e) => setName(e.target.value)}
 						/>
 					</div>
@@ -46,6 +47,7 @@ function Contact() {
 						<input
 							type="email"
 							id="email"
+                            name="email"
 							onChange={(e) => setEmail(e.target.value)}
 						/>
 					</div>
@@ -53,6 +55,7 @@ function Contact() {
 						<label htmlFor="message">Message</label>
 						<textarea
 							id="message"
+                            name="message"
 							onChange={(e) => setMessage(e.target.value)}
 						/>
 					</div>
