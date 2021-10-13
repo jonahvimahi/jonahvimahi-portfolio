@@ -39,7 +39,7 @@ const Nav = () => {
 			</a>
 			</div>
 			<div id="divEmail">
-			{window.innerwidth >= 768 ? <CopyEmail /> : <Email />}
+			{window.innerWidth >= 768 ? <CopyEmail /> : <Email />}
 			</div>
 			</div>
 			</div>

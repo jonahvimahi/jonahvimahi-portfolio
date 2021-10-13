@@ -4,7 +4,7 @@ import '../Projects/Projects.css'
 function About() {
 	return (
 		<div className="aboutpage">
-			<div id=""className="sectionTitle">
+			<div className="sectionTitle">
 				<h1>About</h1>
 			</div>
             <div id="aboutBody">
