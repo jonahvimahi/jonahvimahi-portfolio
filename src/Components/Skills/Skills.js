@@ -1,6 +1,6 @@
 import React from "react";
+import '../../reset.css'
 import "./Skills.css";
-import "../Projects/Projects.css";
 import javascriptLogo from "../../Content/logos/javascript-logo.png";
 import htmlLogo from "../../Content/logos/html-logo.png";
 import cssLogo from "../../Content/logos/css-logo.png";

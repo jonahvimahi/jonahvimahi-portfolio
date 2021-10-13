@@ -1,18 +1,15 @@
-.projectsPage {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-family: Montserrat;
-	margin-top: 8vh;
-}
+
 .skillsList {
-	display: flex;
-	flex-direction: column;
-	background-color: #faccca;
-	border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 90%;
+    background-color: #faccca;
+    border: 2px solid white;
 	border-radius: 15px;
-	padding: 2vh 3vw;
-	margin-bottom: 20vh;
+    margin-bottom: 20vh;
+	margin-left: 4%;
+    padding: 4vh 1vw;
 }
 #test1 {
 	display: flex;

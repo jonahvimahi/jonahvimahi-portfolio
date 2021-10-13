@@ -1,4 +1,5 @@
 import React from "react";
+import "./Contact.css";
 
 function Contact() {
 	const [name, setName] = React.useState("");
@@ -24,45 +25,49 @@ function Contact() {
 	}
 	return (
 		<div id="contactPage">
-            <div className="sectionTitle">
-                <h1>Contact</h1>
-            </div>
-			<form netlify name="contact" onSubmit={handleSubmit}>
-				<h2>Hire Me</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, natus
-					praesentium. Dolorem excepturi inventore, dolores possimus unde vero
-					eos soluta consectetur quidem. Sint distinctio quos sequi. Temporibus
-					ipsam aperiam doloremque.
-				</p>
-				<div>
-					<label htmlFor="name">Name</label>
-					<input
-						type="text"
-						id="name"
-						name="name"
-						onChange={(e) => setName(e.target.value)}
-					/>
+			<div className="sectionTitle">
+				<h1>Contact</h1>
+			</div>
+			<div id="contactBody">
+				<div id="contactForm">
+					<form netlify name="contact" onSubmit={handleSubmit}>
+						<h2>Contact me directly</h2>
+						<div className="formInput" id="name">
+							<label htmlFor="name">Name</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								onChange={(e) => setName(e.target.value)}
+							/>
+						</div>
+						<div className="formInput" id="email">
+							<label htmlFor="email">Email</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								onChange={(e) => setEmail(e.target.value)}
+							/>
+						</div>
+						<div className="formInput" id="message">
+							<label htmlFor="message">Message</label>
+							<textarea
+								id="message"
+								name="message"
+								onChange={(e) => setMessage(e.target.value)}
+							/>
+						</div>
+						<button type="submit">Submit</button>
+					</form>
 				</div>
-				<div>
-					<label htmlFor="email">Email</label>
-					<input
-						type="email"
-						id="email"
-						name="email"
-						onChange={(e) => setEmail(e.target.value)}
-					/>
+				<div id="personal">
+					<h3>Jonah Vimahi</h3>
+                    <p>Lehi, Utah 84043</p>
+                    <p>webdevjonah@gmail.com</p>
+                    <p>(801)-707-8773</p>
 				</div>
-				<div>
-					<label htmlFor="message">Message</label>
-					<textarea
-						id="message"
-						name="message"
-						onChange={(e) => setMessage(e.target.value)}
-					/>
-				</div>
-				<button type="submit">Submit</button>
-			</form>
+			</div>
 		</div>
 	);
 }

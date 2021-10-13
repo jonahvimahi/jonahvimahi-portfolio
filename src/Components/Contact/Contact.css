@@ -1,0 +1,36 @@
+#contactPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20vh;
+}
+#contactBody {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90%;
+	background-color: #faccca;
+	border: 2px solid white;
+	border-radius: 15px;
+	margin-bottom: 20vh;
+	padding: 4vh 1vw;
+}
+#contactBody h2{
+    font-size: 20px;
+}
+#personal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+}
+.formInput{
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0vw;
+}
