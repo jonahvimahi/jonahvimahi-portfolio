@@ -34,10 +34,13 @@
 	padding: 3vh 0vw;
 	text-align: center;
 }
-.projectLinks {
+#projectLinks {
 	display: flex;
 	flex-direction: row;
-	width: inherit;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+
 }
 .projectDescription {
 	display: flex;
@@ -75,6 +78,9 @@
 .gitHubIcon {
 	height: 2rem;
 	width: 2rem;
+}
+#bugTrackerScreenShot{
+	width: 35vw;
 }
 
 @media screen and (max-width: 767px){
